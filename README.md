@@ -70,3 +70,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Blog reference
+[Create Dynamic Forms in React Using React Hook Forms](https://www.syncfusion.com/blogs/post/create-dynamic-forms-in-react-using-react-hook-forms.aspx)
