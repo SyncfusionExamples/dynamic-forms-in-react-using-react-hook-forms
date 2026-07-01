@@ -1,18 +1,13 @@
-import React from "react";
 import { useForm, Controller } from "react-hook-form";
+import { Link } from "react-router-dom";
 import { TextBoxComponent } from "@syncfusion/ej2-react-inputs";
 import { DropDownListComponent } from "@syncfusion/ej2-react-dropdowns";
-import {
-  CheckBoxComponent,
-  RadioButtonComponent,
-  ButtonComponent,
-} from "@syncfusion/ej2-react-buttons";
+import { CheckBoxComponent, RadioButtonComponent, ButtonComponent } from "@syncfusion/ej2-react-buttons";
 import "@syncfusion/ej2-base/styles/material.css";
 import "@syncfusion/ej2-inputs/styles/material.css";
 import "@syncfusion/ej2-react-dropdowns/styles/material.css";
 import "@syncfusion/ej2-buttons/styles/material.css";
 import "../App.css";
-import { Link } from "react-router-dom";
 
 const dynamicForm = {
   firstName: {
@@ -36,7 +31,7 @@ const dynamicForm = {
   gender: {
     label: "Gender",
     type: "radio",
-    options: ["male", "female"],
+    options: ["Male", "Female"],
     defaultValue: "",
     rules: {
       required: true,
@@ -85,6 +80,7 @@ const Input = ({ value, onChange, type, ...rest }) => {
           checked={value === e}
         />
       ));
+
     case "dropdown":
       return (
         <DropDownListComponent
@@ -114,7 +110,6 @@ const Dynamic = () => {
   const {
     handleSubmit,
     control,
-    // watch,
     formState: { errors },
   } = useForm();
 
@@ -145,8 +140,6 @@ const Dynamic = () => {
   });
 
   const onSubmit = (data) => console.log(data);
-
-  // console.log(watch("example")); // watch input value by passing the name of it
 
   return (
     /* "handleSubmit" will validate your inputs before invoking "onSubmit" */

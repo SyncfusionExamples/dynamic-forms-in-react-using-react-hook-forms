@@ -8,8 +8,9 @@
 # testing
 /coverage
 
-# production
-/build
+# Vite build output
+/dist
+.vite/
 
 # misc
 .DS_Store
